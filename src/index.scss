@@ -1,0 +1,39 @@
+@import "/src/utils/vars";
+
+* {
+  outline: 1px solid lightgreen;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "Manrope", " Minion Pro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+p,
+input,
+input::placeholder,
+button {
+  font-family: $font-family-base;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    opacity: 0.6;
+  }
+}
