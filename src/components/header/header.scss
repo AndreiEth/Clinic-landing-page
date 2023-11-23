@@ -3,7 +3,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(../../images/background-top.svg);
+  background: linear-gradient(
+    269deg,
+    #dbf7fa 0%,
+	rgba(255, 255, 255, 1) 13%,
+	rgba(255, 255, 255, 1) 87%,
+    #dbf7fa 100%
+  );
   padding: 65px 0 61.22px;
 
   &__logo {
