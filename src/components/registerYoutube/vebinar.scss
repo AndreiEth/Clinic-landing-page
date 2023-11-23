@@ -1,0 +1,22 @@
+.vebinar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      245deg,
+      rgba(171, 82, 206, 0.15) 25.08%,
+      rgba(254, 134, 135, 0.15) 73.48%
+    ),
+    #fff;
+  padding: 87px 0 59px;
+  &__text {
+    max-width: 1195px;
+    height: 86px;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%;
+    margin: 0;
+  }
+}

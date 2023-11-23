@@ -1,0 +1,33 @@
+.team {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //   height: 1100px;
+  position: relative;
+  padding-bottom: 125px;
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 157%;
+    margin: 93px 0 89px;
+    z-index: 2;
+  }
+
+  &__circle-img {
+    position: absolute;
+    z-index: 1;
+    top: 612px;
+    right: 97px;
+  }
+
+  &__test {
+    position: absolute;
+    z-index: 1;
+    top: 587px;
+    left: 0%;
+  }
+}
