@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../images/background-top.svg);
+  padding: 65px 0 61.22px;
+
+  &__logo {
+    width: 105.081px;
+    height: 85.78px;
+  }
+
+  &__logo-text {
+    color: #8f3299;
+    font-family: "Minion Pro";
+    font-size: 29.907px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: initial;
+    width: 223px;
+    height: 67px;
+  }
+}
