@@ -17,16 +17,58 @@
     z-index: 2;
   }
 
+  &__container {
+    margin-top: 99.31px;
+    display: flex;
+    flex-direction: row;
+    width: 1168px;
+  }
+
+  &__img {
+    width: 307.331px;
+    height: 362px;
+    margin-right: 83px;
+    z-index: 10;
+  }
+
+  &__info {
+  }
+
+  &__name {
+    font-size: 33.635px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47.703px;
+    margin: 29px 0 25px;
+  }
+
+  &__post {
+    font-size: 20.181px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    min-height: 86px;
+    margin: 0;
+  }
+
+  &__proffesion {
+    color: rgba(90, 92, 97, 0.7);
+    font-size: 20.181px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+	margin: 0;
+  }
   &__circle-img {
     position: absolute;
-    z-index: 1;
-    top: 612px;
+    z-index: 0;
+    top: 642px;
     right: 97px;
   }
 
   &__test {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 587px;
     left: 0%;
   }
