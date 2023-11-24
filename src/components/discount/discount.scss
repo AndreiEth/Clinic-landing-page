@@ -1,3 +1,5 @@
+@import "../../utils/breakpoints";
+
 .discount {
   background: linear-gradient(
       0deg,
@@ -9,6 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  border-bottom: 1px solid #fff;
 
   &__content {
     max-width: 419px;
@@ -61,5 +64,30 @@
   &__image-l {
     width: 325px;
     height: 341px;
+  }
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0;
+    &__content {
+      margin: 0 0 65px;
+    }
+
+    &__title {
+      font-size: 18.8px;
+    }
+
+    &__percent {
+      font-size: 58.489px;
+    }
+
+    &__info {
+      font-size: 14.622px;
+    }
+    &__images {
+      display: none;
+    }
   }
 }

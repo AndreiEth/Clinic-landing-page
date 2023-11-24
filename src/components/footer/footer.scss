@@ -1,3 +1,5 @@
+@import "../../utils/breakpoints";
+
 .footer {
   display: flex;
   align-items: center;
@@ -22,5 +24,22 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  @include sm {
+    padding: 34px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    &__img {
+      width: 52.222px;
+      height: 52.222px;
+    }
+
+    &__years {
+      font-size: 14.622px;
+    }
   }
 }

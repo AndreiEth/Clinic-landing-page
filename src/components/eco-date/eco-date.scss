@@ -1,3 +1,5 @@
+@import "../../utils/breakpoints";
+
 .eco {
   display: flex;
   flex-direction: row;
@@ -71,5 +73,43 @@
     font-weight: 800;
     line-height: 157%;
     margin-top: 34px;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    background: url(../../images/line-mobile.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 70px ;
+    &__image {
+      width: 142.044px;
+      height: 142.044px;
+      margin: 0 0 15.67px 0;
+    }
+    &__date {
+      font-size: 16.711px;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+    &__title {
+      font-size: 16.711px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 44px;
+    }
+
+    &__description {
+      font-size: 16.711px;
+      font-weight: 400;
+      max-width: 344.667px;
+      margin-bottom: 23px;
+    }
+    &__promo {
+      display: none;
+    }
   }
 }

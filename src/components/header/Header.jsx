@@ -6,6 +6,7 @@ import useDevice from "../../hooks/device";
 
 export default function Header() {
   const { isMobile } = useDevice();
+  
   return (
     <header className='header'>
       <Link

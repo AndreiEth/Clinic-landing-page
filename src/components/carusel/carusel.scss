@@ -1,17 +1,18 @@
-@import '../../utils/breakpoints';
+@import "../../utils/breakpoints";
 
 .swiper1 {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  @include sm {
+    max-width: 217.244px;
+    margin-bottom: 63.71px;
+  }
 }
 
 .swiper-wrapper {
   max-width: 1168px;
-  @include xl {
-    max-width: 851px;
-  }
 }
 
 .swiper-slide1 {
@@ -70,6 +71,9 @@
   @include xl {
     right: 6%;
   }
+  @include md {
+    display: none;
+  }
 }
 
 .button-prev-slide {
@@ -87,6 +91,9 @@
   transition: opacity 0.3s ease-in;
   :hover::after {
     opacity: 0.1;
+  }
+  @include md {
+    display: none;
   }
   @include xl {
     left: 6%;

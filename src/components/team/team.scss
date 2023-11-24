@@ -76,10 +76,69 @@
   }
 
   @include sm {
+	padding-bottom: 33px;
     &__title {
       font-size: 16.711px;
       width: 344.667px;
-	  margin: 67px 0 31px;
+      margin: 67px 0 31px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      max-width: 267px;
+    }
+
+    &__img {
+      width: 217.244px;
+      height: 255.889px;
+      margin: 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__name {
+      text-align: center;
+      font-size: 18.8px;
+      line-height: 26.111px;
+      margin: 28px 0 6px;
+    }
+
+    &__post {
+      font-size: 14.622px;
+      line-height: 26.111px;
+      text-align: center;
+      margin-bottom: 12px;
+      width: 267.378px;
+    }
+
+    &__proffesion {
+      font-size: 14.622px;
+      text-align: center;
+      width: 222.467px;
+      height: 130.556px;
+      br {
+        display: none;
+		&:nth-last-child(1){
+		display: block;
+	  }
+      }
+	  
+    }
+
+    &__circle-img {
+      width: 300px;
+      height: 308.108px;
+	  top:500px;
+	  right: -100px;
     }
     &__test {
       display: none;
