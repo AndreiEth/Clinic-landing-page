@@ -4,15 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1168px;
   z-index: 10;
   @include sm {
     max-width: 217.244px;
     margin-bottom: 63.71px;
   }
-}
-
-.swiper-wrapper {
-  max-width: 1168px;
 }
 
 .swiper-slide1 {
@@ -98,4 +95,13 @@
   @include xl {
     left: 6%;
   }
+}
+
+.swiper-pagination{
+	display: none;
+	@include sm {
+		display: block;
+		position: relative !important;
+		
+	}
 }

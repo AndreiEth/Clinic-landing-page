@@ -76,11 +76,22 @@
   }
 
   @include sm {
-	padding-bottom: 33px;
+    padding-bottom: 33px;
+    overflow: hidden;
     &__title {
       font-size: 16.711px;
       width: 344.667px;
       margin: 67px 0 31px;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 16.711px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 157%;
+      text-transform: uppercase;
+      max-width: 344.667px;
     }
 
     &__container {
@@ -127,18 +138,18 @@
       height: 130.556px;
       br {
         display: none;
-		&:nth-last-child(1){
-		display: block;
-	  }
+        &:nth-last-child(1) {
+          display: block;
+        }
       }
-	  
     }
 
     &__circle-img {
       width: 300px;
       height: 308.108px;
-	  top:500px;
-	  right: -100px;
+      top: 500px;
+      right: -100px;
+      overflow: hidden;
     }
     &__test {
       display: none;

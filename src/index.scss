@@ -1,7 +1,18 @@
 @import "/src/utils/vars";
 
-* {
-  outline: 1px solid lightgreen;
+// * {
+//   outline: 1px solid lightgreen;
+// }
+:root {
+  --swiper-pagination-color: #5A5C6166;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #5A5C6126;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
 }
 
 body {

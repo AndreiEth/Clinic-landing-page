@@ -81,10 +81,10 @@
     align-items: center;
     background: none;
     background: url(../../images/line-mobile.svg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: 70px ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 70px;
     &__image {
       width: 142.044px;
       height: 142.044px;
@@ -95,11 +95,29 @@
       font-weight: 800;
       margin-bottom: 7px;
     }
+
+    &__mobile-text {
+      background: -webkit-linear-gradient(45deg, #ab52ce 20%, #fe8687 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 45.956px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+	  margin: 0 0 7px;
+    }
+
     &__title {
       font-size: 16.711px;
       font-style: normal;
       font-weight: 500;
       margin-bottom: 44px;
+      height: 69.978px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157%; /* 26.236px */
     }
 
     &__description {

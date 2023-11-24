@@ -6,7 +6,7 @@ import useDevice from "../../hooks/device";
 
 export default function Header() {
   const { isMobile } = useDevice();
-  
+
   return (
     <header className='header'>
       <Link
@@ -20,12 +20,12 @@ export default function Header() {
         />
       </Link>
 
-      {window.innerWidth === 1000 ? (
+      {isMobile ? (
         <h1 className='header__logo-text'>
           Центр репродукции Клиники Екатерининская
         </h1>
       ) : (
-        <h1 className='header__logo-text'>Клиники Екатерининская</h1>
+        <h1 className='header__logo-text'>Клиника Екатерининская</h1>
       )}
     </header>
   );

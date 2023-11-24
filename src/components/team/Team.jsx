@@ -4,12 +4,21 @@ import Zoom from "../../images/zoom.svg";
 import Test from "../../images/test.svg";
 import Carusel from "../carusel/Carusel";
 import Profile from "../../images/profile-photo.png";
+import useDevice from "../../hooks/device";
 
 export default function Team() {
+  const { isMobile } = useDevice();
   return (
     <section className='team'>
       <h2 className='team__title'>САМАЯ СИЛЬНАЯ КОМАНДА РЕПРОДУКЦИИ В ЮФО</h2>
       <Carusel />
+      {isMobile ? (
+        <p className='team__text'>
+          Руководитель Центра Репродукции и куратор онлайн встречи
+        </p>
+      ) : (
+        <></>
+      )}
       <div className='team__container'>
         <img
           src={Profile}

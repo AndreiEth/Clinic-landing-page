@@ -77,6 +77,13 @@
 
     &__title {
       font-size: 18.8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157%;
+      span {
+        font-weight: 700;
+        text-decoration-line: underline;
+      }
     }
 
     &__percent {

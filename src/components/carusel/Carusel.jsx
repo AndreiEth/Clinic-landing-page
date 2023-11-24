@@ -1,19 +1,24 @@
 import React from "react";
 import "./carusel.scss";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import { CARUSEL_DOCTORS } from "../../utils/const";
+import useDevice from "../../hooks/device";
 
 export default function Carusel() {
+  const { isMobile } = useDevice();
   return (
     <>
       <Swiper
         className='carusel swiper1'
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={100}
+        slidesPerView={4}
+        pagination={{ clickable: true }}
         navigation={{
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
@@ -27,21 +32,12 @@ export default function Carusel() {
         speed={600}
         breakpoints={{
           // when window width is >= 640px
-          640: {
-            width: 640,
+          250: {
             slidesPerView: 1,
-
+            Pagination,
           },
-          // when window width is >= 768px
-          768: {
-            width: 768,
-            slidesPerView: 3,
-
-          },
-          1400: {
-            width: 1400,
+          1000: {
             slidesPerView: 4,
-			
           },
         }}
       >
