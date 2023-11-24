@@ -14,7 +14,6 @@ export default function Carusel() {
         className='carusel swiper1'
         modules={[Navigation, Autoplay]}
         spaceBetween={100}
-        slidesPerView={4}
         navigation={{
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
@@ -26,6 +25,25 @@ export default function Carusel() {
         }}
         loop={true}
         speed={600}
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 3,
+
+          },
+          1400: {
+            width: 1400,
+            slidesPerView: 4,
+			
+          },
+        }}
       >
         {CARUSEL_DOCTORS.map((item, index) => {
           return (

@@ -1,3 +1,5 @@
+@import "../../utils/breakpoints";
+
 .header {
   display: flex;
   flex-direction: row;
@@ -27,5 +29,20 @@
     white-space: initial;
     width: 223px;
     height: 67px;
+  }
+
+  @include sm {
+    background: none;
+    padding: 0;
+    &__logo-text {
+      font-size: 18.207px;
+      width: 203.667px;
+      height: 44.389px;
+    }
+
+    &__logo {
+      width: 63.972px;
+      height: 52.222px;
+    }
   }
 }

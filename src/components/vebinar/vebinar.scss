@@ -1,3 +1,4 @@
+@import "../../utils/breakpoints";
 .vebinar {
   display: flex;
   align-items: center;
@@ -18,5 +19,14 @@
     font-weight: 400;
     line-height: 157%;
     margin: 0;
+  }
+
+  @include sm {
+	padding: 62px 0 37px;
+    &__text {
+      font-size: 14.622px;
+      width: 344.667px;
+      height: 166.067px;
+    }
   }
 }

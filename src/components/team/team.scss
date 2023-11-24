@@ -1,3 +1,5 @@
+@import "../../utils/breakpoints";
+
 .team {
   background-color: #fff;
   display: flex;
@@ -57,7 +59,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-	margin: 0;
+    margin: 0;
   }
   &__circle-img {
     position: absolute;
@@ -71,5 +73,16 @@
     z-index: 0;
     top: 587px;
     left: 0%;
+  }
+
+  @include sm {
+    &__title {
+      font-size: 16.711px;
+      width: 344.667px;
+	  margin: 67px 0 31px;
+    }
+    &__test {
+      display: none;
+    }
   }
 }
