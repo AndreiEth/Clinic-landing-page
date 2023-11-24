@@ -1,0 +1,124 @@
+.program {
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(90, 92, 97, 0.05) 0%,
+      rgba(90, 92, 97, 0.05) 100%
+    ),
+    #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 0 118px;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 157%;
+    margin: 0 0 54px;
+  }
+
+  &__date {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 157%;
+    height: 86px;
+    margin: 0 0 35px;
+    span {
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 59px;
+	list-style-image: url(../../images/list-style.svg);
+	padding: 0;	
+    // &li::before {
+    //   fill: linear-gradient(245deg, #ab52ce 25.08%, #fe8687 73.48%),
+    //     rgba(90, 92, 97, 0.15);
+    //   width: 7.311px;
+    //   height: 7.311px;
+    //   display: inline-block;
+    // }
+  }
+
+  &__lists-mini{
+	padding: 0;
+  }
+
+  &__list {
+    max-width: 316px;
+    margin-right: 50px;
+	padding-left: 7px;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+	&:nth-child(2){
+		padding-left: 0;
+	}
+	&:nth-child(3){
+		padding-left: 0;
+	}
+  }
+
+  &__text {
+    color: #5a5c61;
+    font-size: 14.622px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157%;
+    margin: 0 0 30px;
+  }
+
+  &__circle-img {
+    width: 480px;
+    height: 480px;
+    z-index: 0;
+    position: absolute;
+    top: 158px;
+    left: 130px;
+  }
+
+  &__dummy-img {
+    width: 250px;
+    height: 244px;
+    z-index: 0;
+    position: absolute;
+    top: 370px;
+    right: 38px;
+  }
+
+  &__register {
+    width: 344.667px;
+    height: 62.667px;
+    border-radius: 41.778px;
+    background: linear-gradient(245deg, #ab52ce 25.08%, #fe8687 73.48%), #c4c4c4;
+    color: #fff;
+    text-align: center;
+    font-size: 16.711px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 157%;
+    margin-right: 22.33px;
+  }
+
+  &__prize {
+    width: 344.667px;
+    height: 62.667px;
+    border-radius: 41.778px;
+    border: 2.089px solid #000;
+    text-align: center;
+    font-size: 16.711px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 157%;
+  }
+}
