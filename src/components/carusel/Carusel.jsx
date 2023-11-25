@@ -7,17 +7,13 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { CARUSEL_DOCTORS } from "../../utils/const";
-import useDevice from "../../hooks/device";
 
 export default function Carusel() {
-  const { isMobile } = useDevice();
   return (
     <>
       <Swiper
         className='carusel swiper1'
         modules={[Navigation, Autoplay, Pagination]}
-        spaceBetween={100}
-        slidesPerView={4}
         pagination={{ clickable: true }}
         navigation={{
           nextEl: ".button-next-slide",
@@ -35,9 +31,19 @@ export default function Carusel() {
           250: {
             slidesPerView: 1,
             Pagination,
+            spaceBetween: 100,
           },
-          1000: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          960: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1400: {
             slidesPerView: 4,
+            spaceBetween: 100,
           },
         }}
       >

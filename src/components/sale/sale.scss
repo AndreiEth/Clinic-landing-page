@@ -15,7 +15,7 @@
     margin: 0;
   }
 
-  @include sm {
+  @include md {
     padding: 48px 0 40px;
     &__title {
       font-size: 14.622px;

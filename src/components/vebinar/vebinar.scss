@@ -22,10 +22,19 @@
   }
 
   @include sm {
-	padding: 62px 0 37px;
+    padding: 62px 0 37px;
     &__text {
       font-size: 14.622px;
       width: 344.667px;
+      height: 166.067px;
+    }
+  }
+
+  @include xl {
+    padding: 62px 0 37px;
+    &__text {
+      font-size: 14.622px;
+      max-width: 400px;
       height: 166.067px;
     }
   }

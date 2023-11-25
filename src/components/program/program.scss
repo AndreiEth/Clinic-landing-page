@@ -123,8 +123,12 @@
     font-weight: 600;
     line-height: 157%;
   }
-
-  @include sm {
+  @include xl {
+    &__dummy-img {
+      display: none;
+    }
+  }
+  @include lg {
     padding: 60px 0 72px;
 
     &__title {

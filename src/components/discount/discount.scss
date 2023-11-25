@@ -97,4 +97,19 @@
       display: none;
     }
   }
+
+  @include xl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0;
+
+    &__content {
+      margin: 0 0 65px;
+    }
+    &__images {
+      display: none;
+    }
+  }
 }

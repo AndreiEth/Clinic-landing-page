@@ -45,4 +45,8 @@
       height: 52.222px;
     }
   }
+
+  @include xl {
+    padding-right: 0;
+  }
 }

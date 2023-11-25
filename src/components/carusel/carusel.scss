@@ -6,6 +6,17 @@
   align-items: center;
   max-width: 1168px;
   z-index: 10;
+
+  @include xl {
+    max-width: 710px;
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
   @include sm {
     max-width: 217.244px;
     margin-bottom: 63.71px;
@@ -65,9 +76,10 @@
   :hover {
     opacity: 0.3;
   }
-  @include xl {
+  @include xxl {
     right: 6%;
   }
+
   @include md {
     display: none;
   }
@@ -92,16 +104,16 @@
   @include md {
     display: none;
   }
-  @include xl {
+
+  @include xxl {
     left: 6%;
   }
 }
 
-.swiper-pagination{
-	display: none;
-	@include sm {
-		display: block;
-		position: relative !important;
-		
-	}
+.swiper-pagination {
+  display: none;
+  @include sm {
+    display: block;
+    position: relative !important;
+  }
 }

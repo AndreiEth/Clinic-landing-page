@@ -75,7 +75,27 @@
     left: 0%;
   }
 
-  @include sm {
+  @include xl {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      width: fit-content;
+    }
+    &__proffesion {
+      max-width: 343px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @include lg {
     padding-bottom: 33px;
     overflow: hidden;
     &__title {
