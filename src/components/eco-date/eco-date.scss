@@ -75,6 +75,17 @@
     margin-top: 34px;
   }
 
+  @include md {
+	&__description{
+		width: fit-content;
+	}
+
+	&__image{
+		width: 450px;
+		height: 450px;
+	}
+  }
+
   @include sm {
     display: flex;
     flex-direction: column;

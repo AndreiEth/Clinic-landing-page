@@ -180,4 +180,10 @@
       margin: 0 0 18.8px;
     }
   }
+
+  @include sm {
+    &__list {
+      padding-left: 10px;
+    }
+  }
 }
